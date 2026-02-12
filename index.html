@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universal Video Downloader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Universal Video Downloader</h1>
+    <p class="sub">Download video dari berbagai platform</p>
+
+    <div class="platforms">
+      <span class="pill">Facebook</span>
+      <span class="pill">X / Twitter</span>
+      <span class="pill">Instagram</span>
+      <span class="pill">TikTok</span>
+      <span class="pill">Bilibili</span>
+      <span class="pill">YouTube</span>
+    </div>
+
+    <div class="row">
+      <input id="url" type="url" placeholder="Tempel URL video di sini…" />
+      <div class="row cols">
+        <select id="quality">
+          <option value="best">Best</option>
+          <option value="1080p">1080p</option>
+          <option value="720p">720p</option>
+          <option value="480p">480p</option>
+          <option value="audio">Audio Only</option>
+        </select>
+        <button id="btn" class="primary">Ambil Link</button>
+      </div>
+    </div>
+
+    <div class="notice">
+      ⚠️ Gunakan hanya untuk konten publik atau yang Anda miliki haknya.
+    </div>
+
+    <div id="result" class="result"></div>
+    <footer>Frontend only – backend diperlukan untuk download asli.</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
